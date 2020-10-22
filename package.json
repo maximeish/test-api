@@ -1,0 +1,37 @@
+{
+  "name": "test-api-phantom",
+  "version": "1.0.0",
+  "description": "An API for testing phantom dashboard",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js",
+    "build": "rm -rf ./build/ && npx babel ./src/ --out-dir ./build/",
+    "babel": "babel -V"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maximeish/test-api.git"
+  },
+  "author": "Maxime",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maximeish/test-api/issues"
+  },
+  "homepage": "https://github.com/maximeish/test-api#readme",
+  "dependencies": {
+    "@babel/runtime": "^7.12.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "http-errors": "^1.8.0",
+    "nodemon": "^2.0.6",
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.12.1"
+  },
+  "devDependencies": {
+  }
+}
